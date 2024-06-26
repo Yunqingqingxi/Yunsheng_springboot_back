@@ -2,6 +2,7 @@ package generator.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import generator.domain.User;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @author 花见
@@ -9,6 +10,7 @@ import generator.domain.User;
  * @createDate 2024-06-12 21:44:08
  * @Entity generator.domain.User
  */
+@Mapper
 public interface UserMapper extends BaseMapper<User> {
 
 }

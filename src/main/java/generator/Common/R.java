@@ -5,6 +5,11 @@ import lombok.Data;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 前端返回
+ *
+ * @param <T>
+ */
 @Data
 public class R<T> {
     private int code;
@@ -19,7 +24,7 @@ public class R<T> {
     }
 
     public static <T> R<T> error(String msg) {
-        R r = new R();
+        R<T> r = new R<>();
         r.msg = msg;
         r.code = 1;
         return r;

@@ -14,23 +14,23 @@ import java.io.Serializable;
 @Data
 public class Student implements Serializable {
     /**
-     *
+     * 记录id
      */
     @TableId
     private Integer id;
 
     /**
-     *
+     * 学生学号
      */
     private Integer studentId;
 
     /**
-     *
+     * 学生姓名
      */
     private String studentName;
 
     /**
-     *
+     * 学生成绩
      */
     private String studentScore;
 
@@ -54,7 +54,6 @@ public class Student implements Serializable {
                 && (this.getStudentName() == null ? other.getStudentName() == null : this.getStudentName().equals(other.getStudentName()))
                 && (this.getStudentScore() == null ? other.getStudentScore() == null : this.getStudentScore().equals(other.getStudentScore()));
     }
-
     @Override
     public int hashCode() {
         final int prime = 31;

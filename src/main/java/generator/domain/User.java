@@ -14,18 +14,18 @@ import java.io.Serializable;
 @Data
 public class User implements Serializable {
     /**
-     *
+     * 记录id
      */
     @TableId
     private Integer id;
 
     /**
-     *
+     * 用户账号
      */
     private String username;
 
     /**
-     *
+     * 用户密码
      */
     private String password;
 

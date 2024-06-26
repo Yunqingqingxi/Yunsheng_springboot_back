@@ -7,19 +7,26 @@ import generator.domain.User;
 import generator.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import static generator.util.jwt.createToken;
+import static generator.util.Jwt.createToken;
 
+/**
+ * 用户管理
+ */
 @RestController
 @Slf4j
+@RequestMapping("/user")
 public class UserController {
     @Autowired
     UserService userService;
 
+    /**
+     * 用户登录
+     *
+     * @param user
+     * @return R<String>
+     */
     @PostMapping("/login")
     public R<String> login(@RequestBody User user) {
         String username = user.getUsername();
@@ -35,6 +42,11 @@ public class UserController {
         return R.error("账号或密码错误");
     }
 
+    /**
+     * 用户注册
+     * @param user
+     * @return R<String>
+     */
     @PutMapping("/register")
     public R<String> register(@RequestBody User user) {
         LambdaQueryWrapper<User> lambdaQueryWrapper = new LambdaQueryWrapper<>();

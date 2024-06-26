@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * 学生管理
+ */
 @RestController
 @Slf4j
 public class ScoreController {

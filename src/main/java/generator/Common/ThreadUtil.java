@@ -1,5 +1,8 @@
 package generator.Common;
 
+/**
+ * 线程检查
+ */
 public class ThreadUtil {
     private static ThreadLocal list = new ThreadLocal();
 
