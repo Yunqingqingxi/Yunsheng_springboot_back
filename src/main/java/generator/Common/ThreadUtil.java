@@ -1,4 +1,4 @@
-package com.yunsheng.yunsheng_springboot_back.generator.Common;
+package generator.Common;
 
 public class ThreadUtil {
     private static ThreadLocal list = new ThreadLocal();

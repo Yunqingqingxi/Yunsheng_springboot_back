@@ -1,4 +1,4 @@
-package com.yunsheng.yunsheng_springboot_back.generator.Common;
+package generator.Common;
 
 import lombok.Data;
 
@@ -11,7 +11,6 @@ public class R<T> {
     private String msg;
     private T data;
     private Map map = new HashMap();
-
     public static <T> R<T> success(T object) {
         R<T> r = new R<>();
         r.setCode(0);

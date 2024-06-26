@@ -1,12 +1,12 @@
 
-package com.yunsheng.yunsheng_springboot_back.generator.Controller;
+package generator.Controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.yunsheng.yunsheng_springboot_back.generator.Common.R;
-import com.yunsheng.yunsheng_springboot_back.generator.Common.ThreadUtil;
-import com.yunsheng.yunsheng_springboot_back.generator.domain.Student;
-import com.yunsheng.yunsheng_springboot_back.generator.domain.VO.Score;
-import com.yunsheng.yunsheng_springboot_back.generator.service.StudentService;
+import generator.Common.R;
+import generator.Common.ThreadUtil;
+import generator.domain.Student;
+import generator.domain.VO.Score;
+import generator.service.StudentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

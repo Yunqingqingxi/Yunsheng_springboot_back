@@ -1,4 +1,4 @@
-package com.yunsheng.yunsheng_springboot_back.generator.domain;
+package generator.domain;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -13,25 +13,29 @@ import java.io.Serializable;
 @TableName(value = "student")
 @Data
 public class Student implements Serializable {
-    @TableField(exist = false)
-    private static final long serialVersionUID = 1L;
     /**
      *
      */
     @TableId
     private Integer id;
+
     /**
      *
      */
     private Integer studentId;
+
     /**
      *
      */
     private String studentName;
+
     /**
      *
      */
     private String studentScore;
+
+    @TableField(exist = false)
+    private static final long serialVersionUID = 1L;
 
     @Override
     public boolean equals(Object that) {

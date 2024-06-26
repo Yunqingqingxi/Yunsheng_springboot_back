@@ -1,4 +1,4 @@
-package com.yunsheng.yunsheng_springboot_back.generator.util;
+package generator.util;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

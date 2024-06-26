@@ -1,10 +1,10 @@
-package com.yunsheng.yunsheng_springboot_back.generator.Controller;
+package generator.Controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.yunsheng.yunsheng_springboot_back.generator.Common.R;
-import com.yunsheng.yunsheng_springboot_back.generator.Exception.UserExe;
-import com.yunsheng.yunsheng_springboot_back.generator.domain.User;
-import com.yunsheng.yunsheng_springboot_back.generator.service.UserService;
+import generator.Common.R;
+import generator.Exception.UserExe;
+import generator.domain.User;
+import generator.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.yunsheng.yunsheng_springboot_back.generator.util.jwt.createToken;
-
+import static generator.util.jwt.createToken;
 
 @RestController
 @Slf4j

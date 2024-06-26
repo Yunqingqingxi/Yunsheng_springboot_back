@@ -1,22 +1,20 @@
-package com.yunsheng.yunsheng_springboot_back.generator.Interceptor;
+package generator.Interceptor;
 
 
-import com.yunsheng.yunsheng_springboot_back.generator.Common.ThreadUtil;
+import generator.Common.ThreadUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import static com.yunsheng.yunsheng_springboot_back.generator.util.jwt.getIdfromToken;
-
+import static generator.util.jwt.getIdfromToken;
 
 @Component
 @Slf4j
 public class LoginInterceptor implements HandlerInterceptor {
 
     public static final String AUTHORIZATION_HEADER = "Authorization";
-
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         final String token = request.getHeader(AUTHORIZATION_HEADER);

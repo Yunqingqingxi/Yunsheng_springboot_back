@@ -1,4 +1,4 @@
-package com.yunsheng.yunsheng_springboot_back.generator.domain.VO;
+package generator.domain.VO;
 
 import lombok.Data;
 
